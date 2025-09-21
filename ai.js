@@ -15,18 +15,25 @@ async function queryHF(model, question) {
           Authorization: `Bearer ${promptData.hfApiKey}`,
           "Content-Type": "application/json"
         },
-        timeout: 30000
+        timeout: 60000 // increase timeout for big models
       }
     );
 
-    // ✅ Handle successful text generation
-    if (Array.isArray(response.data) && response.data[0]?.generated_text) {
-      return response.data[0].generated_text.trim();
+    const data = response.data;
+
+    // ✅ Check for error (e.g. "Model loading")
+    if (data?.error) {
+      throw new Error(data.error);
     }
 
-    // ❌ Handle Hugging Face error
-    if (response.data?.error) {
-      throw new Error(response.data.error);
+    // ✅ Handle multiple possible outputs
+    if (Array.isArray(data)) {
+      if (data[0]?.generated_text) {
+        return data[0].generated_text.trim();
+      }
+      if (data[0]?.text) {
+        return data[0].text.trim();
+      }
     }
 
     return "🤔 I couldn’t generate a reply.";
@@ -52,4 +59,5 @@ async function askAI(question) {
 }
 
 module.exports = { askAI };
+
 
