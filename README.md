@@ -2,7 +2,7 @@ An Open Source Code Moderation Bot with AI Logic,
 How to use it?
 Clone it using git
 ```
-git clone https://github.com/JackPk52/Moderation-Bot-With-AI-Logic
+git clone https://github.com/Jackpk52/Moderation-Bot-With-AI-Logic.git
 ```
 
 Open the cloned folder
