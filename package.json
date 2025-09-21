@@ -1,0 +1,16 @@
+{
+  "name": "discord-moderation-bot",
+  "version": "1.0.0",
+  "description": "Full moderation bot with global slash commands and prompt.js config",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "deploy-commands": "node deploy-commands.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.0",
+    "@discordjs/rest": "^1.6.0",
+    "fs-extra": "^11.1.1"
+  }
+}
