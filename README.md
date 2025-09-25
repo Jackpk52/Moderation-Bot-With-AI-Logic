@@ -29,4 +29,5 @@ node index.js
 # Updates
 
 1: Fixed Ai.js Logic (was Broken)
+
 2: Added Notes
