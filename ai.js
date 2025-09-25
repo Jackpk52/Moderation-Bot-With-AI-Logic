@@ -2,7 +2,8 @@ const axios = require("axios");
 const promptData = require("./prompt");
 
 // Primary + fallback models
-const PRIMARY_MODEL = "mistralai/Mistral-7B-Instruct-v0.2";
+// 👉 Swap this to whichever DeepSeek model you want from HuggingFace
+const PRIMARY_MODEL = "deepseek-ai/DeepSeek-R1-Distill-Llama-7B";
 const FALLBACK_MODEL = "gpt2";
 
 async function queryHF(model, question) {
@@ -45,7 +46,7 @@ async function queryHF(model, question) {
 
 async function askAI(question) {
   try {
-    // Try primary model
+    // Try primary model (DeepSeek)
     return await queryHF(PRIMARY_MODEL, question);
   } catch (err) {
     console.log("⚠️ Primary model failed, falling back to GPT-2...");
@@ -59,5 +60,7 @@ async function askAI(question) {
 }
 
 module.exports = { askAI };
+
+
 
 
