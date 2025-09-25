@@ -24,6 +24,9 @@ node deploy-commands
 ```
 node index.js
 ```
+# Notes
+1: When I Said 'Fill in details using Notepad'. i meant to say that add your Bot token, Client ID, and HuggingFace API In Prompt.js
 # Updates
 
 1: Fixed Ai.js Logic (was Broken)
+2: Added Notes
