@@ -29,6 +29,8 @@ node index.js
 
 2: use the Prebuilt Installer Using Windows .msi
 
+3: The script runner is index.js not index.html. Index.html is used for the bot portfolio
+
 # Links
 HuggingFace: https://huggingface.co/settings/tokens
 
@@ -45,4 +47,6 @@ Node.JS: https://nodejs.org/en/download
 2: Added Notes
 
 3: Added Links
+
+4: Added Index.html
 
