@@ -32,7 +32,9 @@ node index.js
 # Links
 HuggingFace: https://huggingface.co/settings/tokens
 Discord Bot Token: https://discord.com/developers/applications
+
 Discord Client ID: https://discord.com/developers/applications
+
 Node.JS: https://nodejs.org/en/download
 
 # Updates
