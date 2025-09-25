@@ -26,8 +26,20 @@ node index.js
 ```
 # Notes
 1: When I Said 'Fill in details using Notepad'. i meant to say that add your Bot token, Client ID, and HuggingFace API In Prompt.js
+
+2: use the Prebuilt Installer Using Windows .msi
+
+# Links
+HuggingFace: https://huggingface.co/settings/tokens
+Discord Bot Token: https://discord.com/developers/applications
+Discord Client ID: https://discord.com/developers/applications
+Node.JS: https://nodejs.org/en/download
+
 # Updates
 
 1: Fixed Ai.js Logic (was Broken)
 
 2: Added Notes
+
+3: Added Links
+
