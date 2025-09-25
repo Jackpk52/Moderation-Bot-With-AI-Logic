@@ -24,3 +24,6 @@ node deploy-commands
 ```
 node index.js
 ```
+# Updates
+
+1: Fixed Ai.js Logic (was Broken)
